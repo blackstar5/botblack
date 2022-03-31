@@ -42,7 +42,7 @@ def hasInsult(msg):
 	return swData
 
 def hasAds(msg):
-	links = list(map(lambda ID: ID.strip()[1:],findall("@[\w|_|\d]+", msg))) + list(map(lambda link:link.split("/")[-1],findall("rubika\.ir/\w+",msg)))
+	links = list(map(lambda ID: ID.strip()[1:],findall("http://","https://",".ir",".com",".org",".net",".me", msg))) + list(map(lambda link:link.split("/")[-1],findall("rubika\.ir/\w+",msg)))
 	joincORjoing = "joing" in msg or "joinc" in msg
 
 	if joincORjoing: return joincORjoing
