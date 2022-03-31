@@ -32,14 +32,15 @@ from difflib import SequenceMatcher
 def similar(a, b):
     return SequenceMatcher(None, a, b).ratio()
 
-def hasInsult(msg):
-	swData = [False,None]
-	for i in open("hosyn.bot.del.txt").read().split("\n"):
+def hasIdef hasAds(msg):
+
+	links = ["http://","https://",".ir",".com",".org",".net",".me"]
+
+	for i in links:
+
 		if i in msg:
-			swData = [True, i]
-			break
-		else: continue
-	return swData
+
+			return True
 
 def hasAds(msg):
 	links = list(map(lambda ID: ID.strip()[1:],findall("http://","https://",".ir",".com",".org",".net",".me", msg))) + list(map(lambda link:link.split("/")[-1],findall("rubika\.ir/\w+",msg)))
