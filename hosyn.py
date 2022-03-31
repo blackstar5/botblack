@@ -835,7 +835,7 @@ while(2 > 1):
                             if text == 'سازنده':
                                 print('message geted and sinned')
                                 try:
-                                    bot.sendMessage(chat['object_guid'], 'I'm a Black Star🖤⭐ @TOCREATE',chat['last_message']['message_id'])
+                                    bot.sendMessage(chat['object_guid'], 'Im a Black Star🖤⭐ @TOCREATE',chat['last_message']['message_id'])
                                     print('sended response')    
                                 except:
                                     print('server bug1')
