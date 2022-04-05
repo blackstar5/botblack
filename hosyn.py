@@ -699,7 +699,7 @@ def get_backup(text,chat,bot):
 
 g_usvl = ''
 test_usvl = ''
-auth = "hqmpzihkcnpkqqipiowxjnffvvlyondk"
+auth = "wgsmzeyujivopgwrnacnimxahkwcjsoo"
 bot = Bot(auth)
 list_message_seened = []
 time_reset = random._floor(datetime.datetime.today().timestamp()) + 350
